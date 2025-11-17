@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "glowing-bolt-478501-f1",
+  "private_key_id": "e668f823aaa421d08a9a2050f6070916c16e2f62",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCvy7/8ATohszgp\n81lLQmAq5ZviZ0jFJLDq4qDrBY4XT5aT5FILpAX4sdAX+lt7NmNJMgD43zMATqKb\nCoWik/6/b+YVyFHl6u+HZ8k1Gd+iwtyZyIiCmFiWHVy6fTAUXkuKPItE9zM2tcFm\nEsExCz5I9zEdql6o2sKy/zNd6ExawPkSwHKbdHK53P0cczULXklv7po7Z5WSr+hZ\nDOk7ZvgTutslBSZcuAuwotECimfFLNFTzljknGxStR/PtaUBMMsy22OMlbLcGqwc\nlb6Yoy8ztatzZEM1yx6axTFVbYGdYf9A4IxPpN2EtsasObUdLG726ni+53wO/Xv6\nduZ5gvcDAgMBAAECggEAAxa541QkMNZkzLvlXECozugk4of9C9W2tBHSUP7Sfc9c\nrnGLDYBOyI1bQiiYdeRBP1Z9FOJbE4zOJ5o6Od6O0c9GBCj2Y2tK1R66NtAjEUmK\nNbuDxoOlvtF6QR6U+y6i9iVVLxuGz1XHNaNruJBhgkexmbtWGXJqjFmWjfZYbRnC\nciRd575MHrMERMqqnHpV5HEvG1tn3sR6XCEqy7u5FcoVqMisYSu5aAokdTDF/kHC\nf/SNRpsAoG3Va1rL4FCVkRml5Ru+fyznqjCaB61Z1nl7ELJ+34VixWTeRYNvzfVP\nSxx2Df3UxHfGFXIqTlHllLgkyFNSfv0eeBhgtiCA8QKBgQDUeXs11yAzzLAv/NZm\nwqHBGgAVCLWcgaiF2sGLwYzZVjDzj9aQSOKLiC4iuVB21PVoekvUoHX2V1fDQWPS\n1m6zihrxkOEWZ3MO/2WOy+7vwinh7rbaNoZnm2M8PRl1gyETJv5mxpzKOOXcPI1O\nkqQ6OCHZ0+5inwQyi+oibZA4kQKBgQDTzsed5UxiRqC/YeC+6XwWx73uylBTESx7\n0FLwyMVfp5pBpqvTlU/CPTtSulXNI2eYfTxvVVFtjIwxftIMKuDMeXYUqdx+deY7\nYkUln0QyJKoDgP7f0qLNR0WTMKA7Xl5vSWcq4aakZ1/a76x0qWOoGlQ8jHbcOwlN\nm7bwLQagUwKBgHS9alzinebYB9XV7Vb4iTc3uePUrTQYaSdiUgUfiuu+15Z66UDN\nSuuvHuolN3iS+WM2DoP8xdNbmfTF8Lre5mPu9W7UU1ej7yvGV15l3hoNbEWeiwjJ\n/H7geV2XlG1kZr/HJPADIBJbwK+I9Xq+R01VmgO81bWJ+Rxsk2/nEt6BAoGAbYw9\nYkT+RLYS3elZvGQ2cfHNInwxH0V6pG8S9sZgjyC4f8wcgspu/h99V0RYrEjrg8sC\nPvL5spdGyzK0oOZsblVD5VwVVrLT6VLiQJsnQmgEJtvI9yqSWWnLal10AkDExvpI\nCb272rw8r5fWsmAJ0yALAWYE89L09Nbcv0wKaVECgYBSKVE7Biv1ppc1nd5ZqB65\nEz/AaP1hPLvAV4kX62qbucMeTQm6ZWZQWaoudTMzNsGytl2N0lAdf9ub3OJ3v6wi\nb00G41YdVqP8YLDVcOmVf8tv16kw+qGKqVhOxTgIvpLkqxOq45VbeI18uOXucxug\n4MGLqt3cGo9LMH2P8e5rFQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "manhwa-bot@glowing-bolt-478501-f1.iam.gserviceaccount.com",
+  "client_id": "106069660000551096743",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/manhwa-bot%40glowing-bolt-478501-f1.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
