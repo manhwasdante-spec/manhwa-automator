@@ -1,4 +1,4 @@
-import cv2
+iimport cv2
 import numpy as np
 from fastapi import FastAPI, UploadFile, File
 from fastapi.responses import StreamingResponse
@@ -10,22 +10,18 @@ app = FastAPI()
 def smooth_fill_balloons(image):
     gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
     
-    # Detecta globos (bordes + umbral)
     edges = cv2.Canny(gray, 60, 120)
     kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (5, 5))
     dilated = cv2.dilate(edges, kernel, iterations=2)
     
-    # Encuentra contornos: globos
     contours, _ = cv2.findContours(dilated, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
-
     result = image.copy()
 
     for cnt in contours:
         area = cv2.contourArea(cnt)
-        if area < 800:   # Filtrar cosas muy pequeñas
+        if area < 800:
             continue
         
-        # Busca el color promedio alrededor del globo (para modo B)
         mask = np.zeros(gray.shape, dtype=np.uint8)
         cv2.drawContours(mask, [cnt], -1, 255, -1)
 
@@ -34,7 +30,6 @@ def smooth_fill_balloons(image):
 
         avg_color = cv2.mean(image, mask=border)[0:3]
 
-        # Rellena el globo con color suave
         cv2.drawContours(result, [cnt], -1, avg_color, -1)
 
     return result
@@ -49,3 +44,10 @@ async def clean_balloons(file: UploadFile = File(...)):
 
     _, buffer = cv2.imencode(".png", cleaned)
     return StreamingResponse(io.BytesIO(buffer.tobytes()), media_type="image/png")
+
+
+# ⬇⬇⬇ SERVIDOR UVICORN NECESARIO PARA RENDER ⬇⬇⬇
+import uvicorn
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=10000)
